@@ -1,0 +1,34 @@
+{
+  "name": "@aleygues/http-test-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose up --build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "serve": "tsc-watch --onSuccess 'node ./build/index.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.25.1",
+    "argon2": "^0.28.5",
+    "class-validator": "^0.13.1",
+    "cookie": "^0.4.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.34"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.4.1",
+    "@types/jsonwebtoken": "^8.5.8",
+    "tsc-watch": "^4.4.0",
+    "typescript": "^4.3.4"
+  }
+}
